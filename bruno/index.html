@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bruno Hoarau :: Développeur Backend Senior</title>
+    <meta name="description" content="Bruno Hoarau, développeur backend senior e-commerce : Magento 2, Node.js, GraphQL, headless, B2B." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <header class="bar">
+      <a class="brand" href="/">Bruno Hoarau</a>
+      <nav aria-label="Navigation principale">
+        <a href="#skills">Compétences</a>
+        <a href="#career">Parcours</a>
+        <a class="bag" href="#contact">Sélection <b id="bag-count">0</b></a>
+      </nav>
+    </header>
+
+    <div class="crumbs label">
+      <ol>
+        <li>Accueil</li>
+        <li>Consultants</li>
+        <li>Backend senior</li>
+      </ol>
+    </div>
+
+    <main class="product">
+      <section class="visual" aria-label="Aperçu de la compétence">
+        <div class="stage">
+          <span class="corner tl label fade" id="stage-ref">Réf. BH-01</span>
+          <div class="big fade" id="stage-title">Magento</div>
+          <div class="corner bl fade" id="stage-tools"></div>
+          <span class="corner br label fade" id="stage-count">01 / 06</span>
+        </div>
+        <div class="thumbs" id="thumbs"></div>
+      </section>
+
+      <section class="buy" aria-labelledby="name">
+        <div>
+          <h1 id="name">Bruno Hoarau</h1>
+          <p class="sub">Développeur Backend Senior · E-commerce headless · Magento 2 / Node.js</p>
+        </div>
+
+        <div class="price">
+          <strong>E-commerce depuis 2006</strong>
+          <span class="stock"><i aria-hidden="true"></i>Ouvert aux opportunités</span>
+        </div>
+
+        <fieldset id="skills">
+          <legend>Compétence : <b id="skill-name">Adobe Commerce</b></legend>
+          <div class="variants" id="variants"></div>
+        </fieldset>
+
+        <p class="desc fade" id="desc"></p>
+
+        <dl class="specs fade" id="specs"></dl>
+
+        <div class="actions" id="contact">
+          <a class="btn" id="cta" href="#contact">Me contacter</a>
+          <button class="btn ghost" type="button" id="copy">Copier l'adresse <span class="email" id="email"></span></button>
+        </div>
+
+        <div class="reassure">
+          <div><span class="label">Grands comptes</span>Swatch Group, Amer Sports, Descours &amp; Cabaud</div>
+          <div><span class="label">Suisse</span>Permis G frontalier</div>
+          <div><span class="label">Profil</span><a href="https://www.linkedin.com/in/bruno-hoarau-920ba787">LinkedIn</a></div>
+        </div>
+
+        <div id="career">
+          <details>
+            <summary>Parcours</summary>
+            <p>
+              2022 - auj. · Descours &amp; Cabaud, consultant backend (via Talan)<br />
+              2021 - 2022 · OralCare et Rado / Swatch Group, développeur Magento 2 (via Wide / Talan)<br />
+              2018 - 2021 · Amer Sports (Salomon, Wilson, Suunto), développeur fullstack Magento &amp; cloud<br />
+              2011 - 2018 · Pro-Living, responsable SI &amp; développeur backend<br />
+              2006 - 2009 · AGL-Import / Miliboo, développeur web fullstack
+            </p>
+          </details>
+          <details>
+            <summary>Formations</summary>
+            <p>
+              2017 · Docker, Treeptik<br />
+              2015 · Asterisk Advanced, Avencall<br />
+              2012 · Magento, E-commerce Academy<br />
+              2003 · BTS Informatique de gestion, option réseau
+            </p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <div class="toast" role="status" aria-live="polite" id="toast"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
