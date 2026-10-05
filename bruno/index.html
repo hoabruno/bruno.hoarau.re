@@ -4,96 +4,226 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bruno Hoarau :: Développeur Backend Senior</title>
-    <meta name="description" content="Bruno Hoarau, développeur backend senior e-commerce : Magento 2, Node.js, GraphQL, headless, B2B." />
+    <meta name="description" content="Bruno Hoarau, développeur backend senior Node.js / TypeScript : APIs, intégrations SI et logique métier complexe. Permis G, région genevoise." />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23d52b1e'/%3E%3C/svg%3E" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&family=Geist+Mono:wght@400;500&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
 
+    <div class="guides" aria-hidden="true"><div class="wrap"><i style="--i:0"></i><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i><i style="--i:9"></i><i style="--i:10"></i><i style="--i:11"></i></div></div>
+
     <header class="bar">
-      <a class="brand" href="/">Bruno Hoarau</a>
+      <a class="brand" href="#top"><i aria-hidden="true"></i>Bruno Hoarau</a>
       <nav aria-label="Navigation principale">
+        <a href="#profile">Profil</a>
         <a href="#skills">Compétences</a>
-        <a href="#career">Parcours</a>
-        <a class="bag" href="#contact">Sélection <b id="bag-count">0</b></a>
+        <a href="#experience">Expérience</a>
+        <a class="nav-cta" href="#contact">Contact</a>
       </nav>
     </header>
 
-    <div class="crumbs label">
-      <ol>
-        <li>Accueil</li>
-        <li>Consultants</li>
-        <li>Backend senior</li>
-      </ol>
-    </div>
+    <main id="top">
 
-    <main class="product">
-      <section class="visual" aria-label="Aperçu de la compétence">
-        <div class="stage">
-          <span class="corner tl label fade" id="stage-ref">Réf. BH-01</span>
-          <div class="big fade" id="stage-title">Magento</div>
-          <div class="corner bl fade" id="stage-tools"></div>
-          <span class="corner br label fade" id="stage-count">01 / 06</span>
+      <section class="hero wrap">
+        <div class="hero-text">
+          <div class="mark" aria-hidden="true"></div>
+          <h1><span class="line"><span>Bruno</span></span><span class="line"><span>Hoarau</span></span></h1>
+          <p class="role">Développeur Backend Senior <span>/</span> Node.js · TypeScript</p>
+          <p class="tagline">APIs, intégrations SI et logique métier complexe · 20 ans d'expérience</p>
         </div>
-        <div class="thumbs" id="thumbs"></div>
+        <img class="photo" src="photo.jpg" width="640" height="688" alt="Portrait de Bruno Hoarau" />
       </section>
 
-      <section class="buy" aria-labelledby="name">
+      <section class="facts wrap" aria-label="En bref">
         <div>
-          <h1 id="name">Bruno Hoarau</h1>
-          <p class="sub">Développeur Backend Senior · E-commerce headless · Magento 2 / Node.js</p>
+          <h3>Contact</h3>
+          <button class="link reveal-email" type="button" data-copy>Afficher l'adresse e-mail</button>
         </div>
-
-        <div class="price">
-          <strong>E-commerce depuis 2006</strong>
-          <span class="stock"><i aria-hidden="true"></i>Ouvert aux opportunités</span>
+        <div>
+          <h3>En ligne</h3>
+          <a href="https://www.linkedin.com/in/bruno-hoarau-920ba787" rel="noopener">in/bruno-hoarau-920ba787</a>
         </div>
-
-        <fieldset id="skills">
-          <legend>Compétence : <b id="skill-name">Adobe Commerce</b></legend>
-          <div class="variants" id="variants"></div>
-        </fieldset>
-
-        <p class="desc fade" id="desc"></p>
-
-        <dl class="specs fade" id="specs"></dl>
-
-        <div class="actions" id="contact">
-          <a class="btn" id="cta" href="#contact">Me contacter</a>
-          <button class="btn ghost" type="button" id="copy">Copier l'adresse <span class="email" id="email"></span></button>
+        <div>
+          <h3>Région</h3>
+          <p>Genève &amp; environs</p>
         </div>
-
-        <div class="reassure">
-          <div><span class="label">Grands comptes</span>Swatch Group, Amer Sports, Descours &amp; Cabaud</div>
-          <div><span class="label">Suisse</span>Permis G frontalier</div>
-          <div><span class="label">Profil</span><a href="https://www.linkedin.com/in/bruno-hoarau-920ba787">LinkedIn</a></div>
+        <div>
+          <h3>Autorisation &amp; statut</h3>
+          <p><strong>Permis G (frontalier) valide</strong></p>
+          <span class="status"><i aria-hidden="true"></i>Ouvert aux opportunités · CDI</span>
         </div>
+      </section>
 
-        <div id="career">
-          <details>
-            <summary>Parcours</summary>
-            <p>
-              2022 - auj. · Descours &amp; Cabaud, consultant backend (via Talan)<br />
-              2021 - 2022 · OralCare et Rado / Swatch Group, développeur Magento 2 (via Wide / Talan)<br />
-              2018 - 2021 · Amer Sports (Salomon, Wilson, Suunto), développeur fullstack Magento &amp; cloud<br />
-              2011 - 2018 · Pro-Living, responsable SI &amp; développeur backend<br />
-              2006 - 2009 · AGL-Import / Miliboo, développeur web fullstack
-            </p>
-          </details>
-          <details>
-            <summary>Formations</summary>
-            <p>
-              2017 · Docker, Treeptik<br />
-              2015 · Asterisk Advanced, Avencall<br />
-              2012 · Magento, E-commerce Academy<br />
-              2003 · BTS Informatique de gestion, option réseau
-            </p>
-          </details>
+      <section class="block wrap" id="profile">
+        <div class="row">
+          <div class="row-label">Profil</div>
+          <p class="summary">
+            Développeur backend depuis 2006, je conçois des APIs et des intégrations qui portent des règles métier exigeantes :
+            tarification B2B, circuits d'approbation, facturation, synchronisation avec les ERP et les bus d'entreprise.
+            Habitué aux grands comptes internationaux (Descours &amp; Cabaud, Swatch Group, Amer Sports), je travaille au quotidien
+            avec designers et chefs de produit, du cadrage des besoins jusqu'à la mise en production.
+          </p>
+        </div>
+      </section>
+
+      <section class="block wrap" id="skills">
+        <h2>Compétences</h2>
+        <div class="skills">
+          <div class="skill">
+            <h3>Backend</h3>
+            <p><strong>Node.js, TypeScript, GraphQL</strong>, GraphQL Mesh, APIs REST, microservices, PHP 8 / POO, Magento 2</p>
+          </div>
+          <div class="skill">
+            <h3>Intégrations</h3>
+            <p><strong>ERP / SI, bus d'événements</strong>, Adyen, PayPal, Global-e, ForgeRock IAM, Algolia</p>
+          </div>
+          <div class="skill">
+            <h3>Cloud &amp; DevOps</h3>
+            <p><strong>Docker, AWS Lambda</strong>, GitLab CI, Jenkins, Linux, Nginx, Traefik, MySQL, Redis, OpenSearch</p>
+          </div>
+          <div class="skill">
+            <h3>Méthodes</h3>
+            <p><strong>Agile / Scrum</strong>, cadrage technique, code review, collaboration UI / UX, Jira, Confluence</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="block wrap" id="experience">
+        <h2>Expérience professionnelle</h2>
+
+        <article class="row job">
+          <div class="row-label"><span class="date">04.2022 – aujourd'hui</span><span class="sub">Via Talan</span></div>
+          <div>
+            <h3 class="job-title">Développeur Backend Senior<span class="org">Descours &amp; Cabaud</span></h3>
+            <p class="context">Leader de la distribution B2B · 4 enseignes, 6 webshops · France, Pays-Bas, international</p>
+            <ul class="points">
+              <li><b>Passerelle d'API unifiée :</b> conception et mise en production de la couche d'orchestration Node.js / TypeScript / GraphQL Mesh qui fédère Magento 2, les microservices métier et les fronts Next.js.</li>
+              <li><b>Logique métier B2B :</b> comptes sociétés, circuits d'approbation, génération de devis, références de commande, facturation dématérialisée (Chorus).</li>
+              <li><b>Tarification &amp; réglementaire :</b> unification des catalogues multi-enseignes, prix à l'unité ou au conditionnement, éco-contributions, TVA multi-taux FR / NL.</li>
+            </ul>
+            <p class="stack"><b>Stack</b>Node.js · TypeScript · GraphQL Mesh · Next.js · Magento 2 (PHP 8) · Docker · GitLab CI</p>
+          </div>
+        </article>
+
+        <article class="row job">
+          <div class="row-label"><span class="date">10.2021 – 04.2022</span><span class="sub">Via Wide / Talan</span></div>
+          <div>
+            <h3 class="job-title">Développeur Magento 2<span class="org">Rado (Swatch Group), OralCare</span></h3>
+            <p class="context">Horlogerie de luxe, Suisse / Canada · Plateforme B2B</p>
+            <ul class="points">
+              <li><b>Rado :</b> création et déploiement du store Canada avec configuration complète d'Algolia, refonte du parcours d'achat desktop / mobile (fiches produits, panier, checkout).</li>
+              <li><b>OralCare :</b> mise en place de A à Z d'une plateforme B2B (prix par groupes clients, paliers de quantité, taxes, espace client), thème Hyvä et recherche OpenSearch / ElasticSuite.</li>
+            </ul>
+            <p class="stack"><b>Stack</b>Magento 2 · PHP · Algolia · OpenSearch · Hyvä · GitLab CI</p>
+          </div>
+        </article>
+
+        <article class="row job">
+          <div class="row-label"><span class="date">04.2018 – 10.2021</span><span class="sub">Via Soluxan</span></div>
+          <div>
+            <h3 class="job-title">Développeur Backend &amp; Cloud<span class="org">Amer Sports</span></h3>
+            <p class="context">Groupe international multi-marques · Salomon, Wilson, Suunto</p>
+            <ul class="points">
+              <li><b>Bus d'entreprise (ASBUS) :</b> conception des passerelles et abonnements synchronisant commandes, clients, retours (RMA) et groupes entre les plateformes marchandes et le SI.</li>
+              <li><b>Serverless :</b> microservices AWS Lambda en TypeScript pour les traitements asynchrones et le découplage des services métier.</li>
+              <li><b>Plateforme unifiée :</b> migration Magento 1 vers Magento 2 et déploiement multi-régions (Salomon APAC, EMEA, NAM ; Wilson EMEA, NAM).</li>
+              <li><b>Paiement &amp; identité :</b> intégration Adyen, PayPal, Amazon Pay et Global-e (vente transfrontalière) ; flux de consentements RGPD sur ForgeRock IAM.</li>
+            </ul>
+            <p class="stack"><b>Stack</b>Node.js · TypeScript · AWS Lambda · PHP · Magento 2 · Docker · Jenkins</p>
+          </div>
+        </article>
+
+        <article class="row job">
+          <div class="row-label"><span class="date">11.2011 – 03.2018</span><span class="sub">Alpes Développement</span></div>
+          <div>
+            <h3 class="job-title">Responsable SI &amp; Développeur Backend<span class="org">Pro-Living</span></h3>
+            <p class="context">Réseau de boutiques en ligne, mobilier &amp; décoration</p>
+            <ul class="points">
+              <li><b>Portail B2B revendeurs :</b> comptes validés, prix HT, devis, commandes et répartition des stocks, taxe éco-mobilier.</li>
+              <li><b>Multi-sites :</b> création de mooviin.com, migrations techniques d'etat-brut.com, grenier-alpin.com et zago-store.com.</li>
+              <li><b>Interfaçage ERP / CRM :</b> synchronisations automatisées entre le catalogue web et les logiciels de gestion internes.</li>
+              <li><b>Infrastructure :</b> administration des serveurs Linux et des bases MySQL ; étude de cadrage d'une marketplace.</li>
+            </ul>
+            <p class="stack"><b>Stack</b>PHP POO · Magento 1 · MySQL · Linux · Apache / Nginx · connecteurs ERP</p>
+          </div>
+        </article>
+
+        <article class="row job">
+          <div class="row-label"><span class="date">06.2006 – 08.2009</span><span class="sub">AGL-Import</span></div>
+          <div>
+            <h3 class="job-title">Développeur Web Fullstack<span class="org">Miliboo.com</span></h3>
+            <p class="context">Pure-player e-commerce en forte croissance</p>
+            <ul class="points">
+              <li><b>Plateforme de vente sur mesure :</b> ventes flash, ventes privées, catalogue multilingue, synchronisations avec le SI.</li>
+              <li><b>Intranet groupe :</b> création initiale et refontes, outils de suivi logistique.</li>
+            </ul>
+            <p class="stack"><b>Stack</b>PHP · MySQL · JavaScript · Linux</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="block wrap" id="projects">
+        <h2>Projets personnels</h2>
+        <article class="row job">
+          <div class="row-label"><span class="date">En continu</span><span class="sub">VPS personnel</span></div>
+          <div>
+            <h3 class="job-title">Infrastructure self-hosted<span class="org">en production</span></h3>
+            <ul class="points">
+              <li><b>Serveur Linux :</b> reverse proxy Traefik, certificats Let's Encrypt automatiques, services conteneurisés (Docker Compose), registry Docker privé.</li>
+              <li><b><a href="https://defilenmyrtille.com" rel="noopener">defilenmyrtille.com</a> :</b> boutique en ligne headless en cours de développement, backend Medusa (Node.js / TypeScript) et storefront Next.js.</li>
+              <li><b>En cours :</b> projet d'apprentissage Nest.js &amp; Vue.js.</li>
+            </ul>
+            <p class="stack"><b>Stack</b>Node.js · Medusa · Next.js · Docker Compose · Traefik · Nginx</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="block wrap three">
+        <div>
+          <h2>Formation</h2>
+          <table class="kv">
+            <tr><td>BTS Informatique de gestion<small>Option Administrateur réseau</small></td><td>2003</td></tr>
+            <tr><td>Baccalauréat scientifique</td><td>1999</td></tr>
+          </table>
+        </div>
+        <div>
+          <h2>Formation continue</h2>
+          <table class="kv">
+            <tr><td>Docker &amp; conteneurisation<small>Treeptik, Paris</small></td><td>2017</td></tr>
+            <tr><td>VoIP &amp; protocoles IP<small>Asterisk · Avencall, Paris</small></td><td>2015</td></tr>
+            <tr><td>Magento<small>E-commerce Academy, Paris</small></td><td>2012</td></tr>
+          </table>
+        </div>
+        <div>
+          <h2>Langues</h2>
+          <table class="kv">
+            <tr><td>Français</td><td>Maternelle</td></tr>
+            <tr><td>Anglais<small>Technique : doc, tickets, code</small></td><td>A2</td></tr>
+            <tr><td>Espagnol</td><td>A1</td></tr>
+          </table>
+        </div>
+      </section>
+
+      <section class="contact wrap" id="contact">
+        <div class="mark" aria-hidden="true"></div>
+        <h2 class="contact-title">Parlons de votre projet.</h2>
+        <p class="contact-text">Certificats de travail disponibles sur demande.</p>
+        <div class="actions">
+          <a class="btn" id="cta" href="#contact">Écrire un e-mail</a>
+          <button class="btn ghost" type="button" data-copy>Copier l'adresse</button>
+          <a class="btn ghost" href="https://www.linkedin.com/in/bruno-hoarau-920ba787" rel="noopener">LinkedIn</a>
         </div>
       </section>
     </main>
+
+    <footer class="foot wrap">
+      <span>Bruno Hoarau <span class="red">/</span> Développeur Backend Senior</span>
+      <span>Région genevoise · Permis G</span>
+    </footer>
 
     <div class="toast" role="status" aria-live="polite" id="toast"></div>
 
