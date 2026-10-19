@@ -120,6 +120,7 @@ h1 {
 .skill h3 { color: var(--ink); margin-bottom: 10px; padding-bottom: 10px; border-bottom: 1px solid var(--rule); }
 .skill p { font-size: 15px; }
 .skill strong { color: var(--ink); font-weight: 600; }
+.skill.wide { grid-column: 1 / -1; }
 
 .job { padding: 28px 0; border-bottom: 1px solid var(--rule); }
 .job:first-of-type { padding-top: 0; }
